@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5cdf0593;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para la imagen */
+.image-container {
+  display: center; /* Asegura que la sombra rodee la imagen */
+  position: relative; /* Permite posicionar la sombra relativa a la imagen */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Estilos para la imagen centrada con bordes redondeados */
+.rounded-image {
+  display: block;
+  margin: 20px auto; /* Ajusta el margen superior e inferior según sea necesario */
+  border-radius: 5px;
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra negra */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* Estilos del encabezado de navegación */
+header {
+  background-color: #577c01;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.centered-title {
+  font-size: 36px;
+  margin: 20px auto; /* Centra horizontalmente */
+  color: #333333bb;
+  text-align: center; /* Centra verticalmente */
+  /* Efecto de iluminación verde */
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  font-family: 'Graffiti', cursive;
+}
+
+/* Estilos para el logo */
+.logo-image {
+  width: 70px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+  /* Otros estilos, como márgenes o posicionamiento, según sea necesario */
+}
+
+
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  list-style: none;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilos del héroe */
+.hero {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #02a102a4;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Graffiti', cursive;
+}
+
+.cta-button:hover {
+  background-color: #7edb14;
+  scale: 1.1;
+  transition: 1s;
+}
+
+/* Estilos de las características */
+.features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #2c990167;
+  box-shadow: 0 0 10px rgba(0, 0, 16, 0.2);
+  border-radius: 5px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #66ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  font-family: 'Graffiti', cursive;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Estilos de los iconos sociales */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1ce709;
 }
